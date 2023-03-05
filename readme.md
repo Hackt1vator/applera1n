@@ -1,7 +1,7 @@
 
 Python3MacApp Learner
 
-![alt text](https://github.com/bartektenDev/Python3MacApp-LearnerTemplate/blob/main/demoimg.png)
+![alt text](https://github.com/Laurin226/applera1n_bypass/blob/main/demoimg.png)
 
 This tool is designed to help new coders to start learning how to make MacOS applications
 using only python3. 
