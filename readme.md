@@ -1,7 +1,6 @@
 # applera1n
 <h1 align="center">
-   <img src="https://avatars.githubusercontent.com/u/114239186?s=100&v=4" alt="palera1n logo">
-    <p>palera1n Legacy (gui version)</p>
+    <p>icloud bypass for ios 15-16</p>
 
 
 ![alt text](https://github.com/Laurin226/applera1n_bypass/blob/main/demoing.png)
