@@ -10,9 +10,7 @@
 <p align="center">
     <strong><a href="CHANGELOG.md">Change Log</a></strong>
     •
-    <strong><a href="https://twitter.com/palera1n">Twitter</a></strong>
-    •
-    <strong><a href="https://twitter.com/laurin2261">My Twitter</a></strong>
+    <strong><a href="https://twitter.com/laurin2261">Twitter</a></strong>
 <h3 align="center">Here is the original Github:  <strong><a href="https://github.com/palera1n/palera1n">Palera1n</a></strong> </h3>
 <h3 align="center">This gui was made with <strong><a href="https://github.com/bartektenDev/Python3MacApp-LearnerTemplate">Python3MacApp LearnerTemplate</a></strong> from @ios_euphoria </h3>
 <h3 align="center">On ios 16.x you have to enable developer mode (before you can enable it, you must sideload an app)</h3>
