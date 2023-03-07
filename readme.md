@@ -6,7 +6,7 @@
 ![alt text](https://github.com/Laurin226/applera1n_bypass/blob/main/demoing.png)
 
 </h1>
-<h3 align="center">This is a modded version of Palera1n jailbreak</h3>
+<h3 align="center">This is a modded version of [Palera1n](https://github.com/palera1n/palera1n) jailbreak</h3>
 <p align="center">
     <strong><a href="CHANGELOG.md">Change Log</a></strong>
     •
