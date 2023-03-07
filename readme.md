@@ -24,7 +24,8 @@ cd DRAG_AND_DROP_applera1n_folder_here
 <h3 align"center">Step 2. run: sudo chmod 755 ./*
 <h3 align"center">Step 3. To launch the app, run this in terminal:
 python3 applera1n.py
-<h3 align"center">Step4. Press start bypass
+<h3 align"center">Step4. Press: start bypass
+
 # Credits
 
 Python3MacApp LearnerTemplate creator: 
