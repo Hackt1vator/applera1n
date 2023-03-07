@@ -22,9 +22,9 @@
 <h3 align"center">Step 1. Run this in terminal:
 cd DRAG_AND_DROP_applera1n_folder_here
 <h3 align"center">Step 2. run: sudo chmod 755 ./*
-<h3 align"center">Step 3. Last to launch the app, run this in terminal:
+<h3 align"center">Step 3. To launch the app, run this in terminal:
 python3 applera1n.py
-
+<h3 align"center">Step4. Press start bypass
 # Credits
 
 Python3MacApp LearnerTemplate creator: 
