@@ -18,7 +18,7 @@
 <h3 align="center">Here you can donate the Palera1n developers: <strong><a href="https://patreon.com/palera1n">Patreon</a></strong></h3>
 <h3 align="center">How does it work: It boots the device with multiple patches required. On first run, it'll boot a ramdisk which dumps your onboard blob, creates a fakefs (if using semi tethered), installs the loader app, and patches your kernel. </h3>
 
-#Bypass
+# bypass
 <h3 align"center">Step 1. Run this in terminal:
 cd DRAG_AND_DROP_applera1n_folder_here
 <h3 align"center">Step 2. run: sudo chmod 755 ./*
