@@ -1,6 +1,6 @@
 # applera1n
 <h1 align="center">
-    <p>no signal icloud bypass for ios 15-16(only macos)</p>
+    <p>icloud bypass for ios 15-16(only macos)</p>
 
 
 ![alt text](https://github.com/Laurin226/applera1n_bypass/blob/main/demoing.png)
