@@ -19,10 +19,11 @@
 <h3 align="center">How does it work: It boots the device with multiple patches required. On first run, it'll boot a ramdisk which dumps your onboard blob, creates a fakefs (if using semi tethered), installs the loader app, and patches your kernel. </h3>
 
 # bypass
-<h3 align"center">Step 1. Run this in terminal:
+<h3 align"center">Step 1. unzip the applera1n folder and drag and drop it to the desktop
+<h3 align"center">Step 2. Run this in terminal:
 cd DRAG_AND_DROP_applera1n_folder_here
-<h3 align"center">Step 2. run: bash ./install.sh, if it ask you to reinstall something press N
-<h3 align"center">Step 3. Press: start bypass
+<h3 align"center">Step 3. run: bash ./install.sh, if it ask you to reinstall something press N
+<h3 align"center">Step 4. Press: start bypass
 
 # Credits
 
