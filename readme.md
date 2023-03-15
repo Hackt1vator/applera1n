@@ -20,6 +20,7 @@
 <h3 align="center">How does it work: It boots the device with multiple patches required. On first run, it'll boot a ramdisk which dumps your onboard blob, creates a fakefs (if using semi tethered), installs the loader app, and patches your kernel. </h3>
 
 # bypass
+
 <h3 Open a terminal window and cd to the directory that palera1n was downloaded to.
 <h3 Run sudo mkdir /usr/local/bin </h3>
 <h3 If you get a message saying mkdir: /usr/local/bin: File exists, this is safe to ignore.
