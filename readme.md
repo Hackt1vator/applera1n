@@ -27,7 +27,6 @@
 <h3 align"center">Replace ./palera1n-macos-universal with whatever version you downloaded
 <h3 align"center">Run sudo xattr -c /usr/local/bin/palera1n
 <h3 align"center">Run sudo chmod +x /usr/local/bin/palera1n
-<h3 align"center">Run this in terminal:
 <h3 cd DRAG_AND_DROP_applera1n_folder_here
 <h3 align"center">run: bash ./install.sh, if it ask you to reinstall something press N 
 <h3 align"center">Last to launch the app, run this in terminal:
