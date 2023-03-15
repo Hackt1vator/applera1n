@@ -21,20 +21,20 @@
 
 # bypass
 
-<h3 Open a terminal window and cd to the directory that palera1n was downloaded to.
-<h3 Run sudo mkdir /usr/local/bin </h3>
-<h3 If you get a message saying mkdir: /usr/local/bin: File exists, this is safe to ignore.
-<h3 Run sudo mv ./palera1n-macos-universal /usr/local/bin/palera1n
-<h3 Replace ./palera1n-macos-universal with whatever version you downloaded
-<h3 Run sudo xattr -c /usr/local/bin/palera1n
-<h3 Run sudo chmod +x /usr/local/bin/palera1n
-<h3 align"center">Step 1. unzip the applera1n folder and drag and drop it to the desktop
-<h3 align"center">Step 2. Run this in terminal:
+<h3 align"center">Open a terminal window and cd to the directory that palera1n was downloaded to.
+<h3 align"center">Run sudo mkdir /usr/local/bin </h3>
+<h3 align"center">If you get a message saying mkdir: /usr/local/bin: File exists, this is safe to ignore.
+<h3 align"center">Run sudo mv ./palera1n-macos-universal /usr/local/bin/palera1n
+<h3 align"center">Replace ./palera1n-macos-universal with whatever version you downloaded
+<h3 align"center">Run sudo xattr -c /usr/local/bin/palera1n
+<h3 align"center">Run sudo chmod +x /usr/local/bin/palera1n
+<h3 align"center">unzip the applera1n folder and drag and drop it to the desktop
+<h3 align"center">Run this in terminal:
 <h3 cd DRAG_AND_DROP_applera1n_folder_here
-<h3 align"center">Step 3. run: bash ./install.sh, if it ask you to reinstall something press N 
-<h3 align"center">Step 4. Last to launch the app, run this in terminal:
+<h3 align"center">run: bash ./install.sh, if it ask you to reinstall something press N 
+<h3 align"center">Last to launch the app, run this in terminal:
 python3 applera1n.py
-<h3 align"center">Step 4. Press: start bypass
+<h3 align"center">Press: start bypass
 
 # Credits
 
