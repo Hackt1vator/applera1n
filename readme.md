@@ -20,6 +20,13 @@
 <h3 align="center">How does it work: It boots the device with multiple patches required. On first run, it'll boot a ramdisk which dumps your onboard blob, creates a fakefs (if using semi tethered), installs the loader app, and patches your kernel. </h3>
 
 # bypass
+<h3 Open a terminal window and cd to the directory that palera1n was downloaded to.
+<h3 Run sudo mkdir /usr/local/bin
+<h3 If you get a message saying mkdir: /usr/local/bin: File exists, this is safe to ignore.
+<h3 Run sudo mv ./palera1n-macos-universal /usr/local/bin/palera1n
+<h3 Replace ./palera1n-macos-universal with whatever version you downloaded
+<h3 Run sudo xattr -c /usr/local/bin/palera1n
+<h3 Run sudo chmod +x /usr/local/bin/palera1n
 <h3 align"center">Step 1. unzip the applera1n folder and drag and drop it to the desktop
 <h3 align"center">Step 2. Run this in terminal:
 cd DRAG_AND_DROP_applera1n_folder_here
