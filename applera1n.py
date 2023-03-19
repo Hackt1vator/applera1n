@@ -168,7 +168,7 @@ my_label2.place(x=130, y=130)
 
 #label
 my_label3 = Label(frame,
-                 text = "ver 1.0")
+                 text = "ver 1.1")
 my_label3.place(x=10, y=220)
 
 
