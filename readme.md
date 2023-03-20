@@ -21,6 +21,7 @@
 # bypass
 
 <h3 align"center">Open a terminal window and cd to the directory that applera1n was downloaded to.
+<h3 align"center">Run: git init -b main
 <h3 align"center">Run sudo mkdir /usr/local/bin </h3>
 <h3 align"center">If you get a message saying mkdir: /usr/local/bin: File exists, this is safe to ignore.
 <h3 align"center">Run sudo mv ./palera1n-macos-universal /usr/local/bin/palera1n
