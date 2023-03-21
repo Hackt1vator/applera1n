@@ -31,7 +31,7 @@
 <h3 align"center">run: bash ./install.sh, if it ask you to reinstall something press N 
 <h3 align"center">Last to launch the app, run this in terminal:
 python3 applera1n.py
-<h3 align"center">Press: start bypass(if you are already jailbroken with palera1n c press bypass no jailbreal)
+<h3 align"center">Press: start bypass(if you are already jailbroken with palera1n press bypass no jailbreal)
 
 # Credits
 
