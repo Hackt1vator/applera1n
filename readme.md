@@ -34,6 +34,17 @@
 python3 applera1n.py
 <h3 align"center">Press: start bypass(if you are already jailbroken with palera1n press bypass no jailbreak)
 
+# use the desktop app(not recommered)
+
+<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">download the applera1n dmg file from the releases
+<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">drag and drop the applera1n.app to the application folder
+<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">Run these commands:
+<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">sudo xattr -r /Applications/applera1n.app
+<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">sudo xattr -rd com.apple.quarantine /Applications/applera1n.app
+<h3 align"center"><h3 align"center"><h3 align"center">sudo xattr -d com.apple.quarantine /Applications/applera1n.app
+<h3 align"center"><h3 align"center">sudo xattr -r com.apple.quarantine /Applications/applera1n.app
+<h3 align"center">chmod 755 /Applications/applera1n.app
+
 # Credits
 
 Python3MacApp LearnerTemplate creator: 
