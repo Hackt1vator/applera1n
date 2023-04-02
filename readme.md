@@ -44,6 +44,7 @@ python3 applera1n.py
 <h3 align"center"><h3 align"center"><h3 align"center">sudo xattr -d com.apple.quarantine /Applications/applera1n.app
 <h3 align"center"><h3 align"center">sudo xattr -r com.apple.quarantine /Applications/applera1n.app
 <h3 align"center">chmod 755 /Applications/applera1n.app
+<h3 align"center">now open the applera1n app
 
 # Credits
 
