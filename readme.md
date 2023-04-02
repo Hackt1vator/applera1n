@@ -10,7 +10,7 @@
 <p align="center">
     <strong><a href="CHANGELOG.md">Change Log</a></strong>
     •
-    <strong><a href="https://twitter.com/laurin2261">Twitter</a></strong>
+    <strong><a href="https://twitter.com/hackt1vator">Twitter</a></strong>
 <h3 align="center">This is a no signal bypass</h3>
 <h3 align="center">This gui was made with <strong><a href="https://github.com/bartektenDev/Python3MacApp-LearnerTemplate">Python3MacApp LearnerTemplate</a></strong> from @ios_euphoria </h3>
 <h3 align="center">On A11 and A10 devices don´t set a passcode after bypass</h3>
