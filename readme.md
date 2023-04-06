@@ -13,7 +13,7 @@
     <strong><a href="https://twitter.com/hackt1vator">Twitter</a></strong>
     <strong><a href="https://applera1n.github.io">Website</a></strong>
 <h3 align="center">This is a no signal bypass</h3>
-<h3 align="center">This gui was made with <strong><a href="https://github.com/bartektenDev/Python3MacApp-LearnerTemplate">Python3MacApp LearnerTemplate</a></strong> from @ios_euphoria </h3>
+<h3 align="center">The gui was made with <strong><a href="https://github.com/bartektenDev/Python3MacApp-LearnerTemplate">Python3MacApp LearnerTemplate</a></strong> from @ios_euphoria </h3>
 <h3 align="center">On A11 and A10 devices don´t set a passcode after bypass</h3>
 <h3 align="center">Here you can download the Palera1n loader ipa: <strong><a href="https://nightly.link/palera1n/loader/workflows/build/main/palera1n.zip">Palera1n.ipa</a></strong></h3>
 <h3 align="center">!!!Warning! This is for educational porpuse only!!!</h3>
