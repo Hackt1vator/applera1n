@@ -1,6 +1,6 @@
 # applera1n
 <h1 align="center">
-    <p>icloud bypass for ios 15-16.3(only macos, if you are using Linux use the Linux branche)</p>
+    <p>icloud bypass for ios 15-16.3(macos and Linux)</p>
 
 
 ![alt text](https://github.com/Laurin226/applera1n_bypass/blob/main/demoing.png)
@@ -20,7 +20,7 @@
 <h3 align="center">Here you can donate the developer: <strong><a href="https://www.buymeacoffee.com/Hacktivator">buymeacoffee</a></strong></h3>
 <h3 align="center">How does it work: It boots the device with multiple patches required. On first run, it'll boot a ramdisk which dumps your onboard blob, creates a fakefs (if using semi tethered), installs the loader app, and patches your kernel. </h3>
 
-# bypass
+# bypass on macos
 
 <h3 align"center">download applera1n and unzip it
 <h3 align"center">Open a terminal window and cd to the directory that applera1n was downloaded to.
@@ -29,6 +29,18 @@
 <h3 align"center">Run sudo xattr -d com.apple.quarantine ./*
 <h3 align"center">Run sudo chmod 755 ./*
 <h3 align"center">Now cd the applera1n folder inside the applera1n folder and run the last 3 commands above again
+<h3 align"center">cd the applera1n directory again
+<h3 align"center">Last to launch the app, run this in terminal:
+python3 applera1n.py
+<h3 align"center">Press: start bypass
+
+# bypass on Linux
+
+<h3 align"center">download applera1n and unzip it
+<h3 align"center">Open a terminal window and cd to the directory that applera1n was downloaded to.
+<h3 align"center">Run git init -b main
+<h3 align"center">Run sudo chmod 755 ./*
+<h3 align"center">Now cd the applera1n folder inside the applera1n folder and run sudo chmod 755 ./* again
 <h3 align"center">cd the applera1n directory again
 <h3 align"center">Last to launch the app, run this in terminal:
 python3 applera1n.py
