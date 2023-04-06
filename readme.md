@@ -22,6 +22,7 @@
 
 # bypass
 
+<h3 align"center">download applera1n and unzip it
 <h3 align"center">Open a terminal window and cd to the directory that applera1n was downloaded to.
 <h3 align"center">Run git init -b main
 <h3 align"center">Run sudo xattr -rd com.apple.quarantine ./*
