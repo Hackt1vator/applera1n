@@ -1,6 +1,6 @@
 # applera1n
 <h1 align="center">
-    <p>icloud bypass for ios 15-15.7.1 and 16-16.2(only macos, if you are using Linux use the Linux branche)</p>
+    <p>icloud bypass for ios 15-16.3(only macos, if you are using Linux use the Linux branche)</p>
 
 
 ![alt text](https://github.com/Laurin226/applera1n_bypass/blob/main/demoing.png)
