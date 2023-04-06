@@ -27,11 +27,11 @@
 <h3 align"center">Run sudo xattr -rd com.apple.quarantine ./*
 <h3 align"center">Run sudo xattr -d com.apple.quarantine ./*
 <h3 align"center">Run sudo chmod 755 ./*
-<h3 align"center">Now cd the applera1n folder inside the applera1n folder and run the commands above again
+<h3 align"center">Now cd the applera1n folder inside the applera1n folder and run the last 3 commands above again
 <h3 cd the applera1n directory again
 <h3 align"center">Last to launch the app, run this in terminal:
 python3 applera1n.py
-<h3 align"center">Press: start
+<h3 align"center">Press: start bypass
 
 # use the desktop app on macos(not recommered)
 
