@@ -8,7 +8,7 @@
 </h1>
 <h3 align="center">This is a modded version of    <strong><a href="https://github.com/palera1n/palera1n">Palera1n jailbreak</a></strong></h3>
 <p align="center">
-    <strong><a href="https://github.com/Hackt1vator/applera1n/releases/tag/v.1.3.1">releases</a></strong>
+    <strong><a href="https://github.com/Hackt1vator/applera1n/releases/">releases</a></strong>
     •
     <strong><a href="https://twitter.com/hackt1vator">Twitter</a></strong>
     <strong><a href="https://applera1n.github.io">Website</a></strong>
