@@ -38,7 +38,6 @@ python3 applera1n.py
 
 # bypass on Linux
 
-<h3 align"center">install here the Dependencies of Silver, it should work for applera1n also: https://www.appletech752.com/dependencies.sh
 <h3 align"center">download applera1n and unzip it
 <h3 align"center">Open a terminal window and cd to the directory that applera1n was downloaded to.
 <h3 align"center">Run git init -b main
