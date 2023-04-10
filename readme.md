@@ -41,6 +41,7 @@ python3 applera1n.py
 
 <h3 align"center">download applera1n and unzip it
 <h3 align"center">Open a terminal window and cd to the directory that applera1n was downloaded to.
+<h3 align"center">Run bash install.sh
 <h3 align"center">Run git init -b main
 <h3 align"center">Run sudo chmod 755 ./*
 <h3 align"center">Now cd the applera1n folder inside the applera1n folder and run sudo chmod 755 ./* again
