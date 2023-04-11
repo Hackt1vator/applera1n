@@ -40,7 +40,9 @@ python3 applera1n.py
 # bypass on Linux
 
 <h3 align"center">download applera1n and unzip it
-<h3 align"center">Open a terminal window and cd to the directory that applera1n was downloaded to.
+<h3 align"center">Connect your iphone
+<h3 align"center">Open a terminal and run sudo systemctl stop usbmuxd then run sudo systemctl stop usbmuxd
+<h3 align"center">Open a new terminal window and cd to the directory that applera1n was downloaded to.
 <h3 align"center">Run bash install.sh
 <h3 align"center">Run git init -b main
 <h3 align"center">Run sudo chmod 755 ./*
