@@ -840,11 +840,11 @@ else
     echo "patch can not be downloaded"
 fi
         remote_cmd "mv -v /mnt$di/usr/libexec/mobileactivationd /mnt$di/usr/libexec/mobileactivationdBackup"
-        remote_cmd "ldid -e /mnt$di/usr/libexec/mobileactivationdBackup > /mnt$di/usr/libexec/mob.plist"
+        remote_cmd "ldid -e /mnt$di/usr/libexec/mobileactivationdBackup > /mnt$di/usr/libexec/mobileactivationd.plist"
         remote_cp patch root@localhost:/mnt$di/usr/libexec/mobileactivationd
         remote_cmd "chmod 755 /mnt$di/usr/libexec/mobileactivationd"
-        remote_cmd "ldid -S/mnt$di/usr/libexec/mob.plist /mnt$di/usr/libexec/mobileactivationd"
-        remote_cmd "rm -v /mnt$di/usr/libexec/mob.plist"
+        remote_cmd "ldid -S/mnt$di/usr/libexec/mobileactivationd.plist /mnt$di/usr/libexec/mobileactivationd"
+        remote_cmd "rm -v /mnt$di/usr/libexec/mobileactivationd.plist"
         echo ""
         echo "icloud bypass done"
         echo ""
