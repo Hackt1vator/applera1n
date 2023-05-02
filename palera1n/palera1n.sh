@@ -845,6 +845,7 @@ fi
         remote_cmd "chmod 755 /mnt$di/usr/libexec/mobileactivationd"
         remote_cmd "ldid -S/mnt$di/usr/libexec/mobileactivationd.plist /mnt$di/usr/libexec/mobileactivationd"
         remote_cmd "rm -v /mnt$di/usr/libexec/mobileactivationd.plist"
+        rm ./patch
         echo ""
         echo "icloud bypass done"
         echo ""
