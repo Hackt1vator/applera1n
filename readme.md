@@ -21,7 +21,20 @@
 <h3 align="center">Here you can donate the developer: <strong><a href="https://www.buymeacoffee.com/Hacktivator">buymeacoffee</a></strong></h3>
 <h3 align="center">How does it work: It boots the device with multiple patches required. On first run, it'll boot a ramdisk which dumps your onboard blob, creates a fakefs (if using semi tethered), installs the loader app, and patches your kernel. </h3>
 
-# bypass on macos
+# use the desktop app on macos(recommered)
+
+<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">download the applera1n dmg file from the releases
+<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">drag and drop the applera1n.app to the application folder
+<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">Run these commands:
+<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">sudo xattr -r /Applications/applera1n.app
+<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">sudo xattr -rd com.apple.quarantine /Applications/applera1n.app
+<h3 align"center"><h3 align"center"><h3 align"center">sudo xattr -d com.apple.quarantine /Applications/applera1n.app
+<h3 align"center"><h3 align"center">sudo xattr -r com.apple.quarantine /Applications/applera1n.app
+<h3 align"center">chmod 755 /Applications/applera1n.app
+<h3 align"center">now open the applera1n app
+
+
+# bypass on macos with python app
 
 <h3 align"center">install here the Dependencies of Silver, it should work for applera1n also: https://www.appletech752.com/dependencies.sh
 <h3 align"center">Run bash (drag and drop here the file)
@@ -31,7 +44,7 @@
 <h3 align"center">Run sudo xattr -rd com.apple.quarantine ./*
 <h3 align"center">Run sudo xattr -d com.apple.quarantine ./*
 <h3 align"center">Run sudo chmod 755 ./*
-<h3 align"center">Now cd the applera1n folder inside the applera1n folder and run the last 3 commands above again
+<h3 align"center">Now cd the palera1n and device folder inside the applera1n folder and run the last 3 commands above again
 <h3 align"center">cd the applera1n directory again
 <h3 align"center">Last to launch the app, run this in terminal:
 python3 applera1n.py
