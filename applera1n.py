@@ -167,14 +167,18 @@ def startbypass():
 
 
 def enterRecMode():
+    if system_name == "posix":
+        os.system("./device/Linux/enterrecovery.sh")
+    elif system_name == "darwin":
+        os.system("./device/Darwin/enterrecovery.sh")
     print("Kicking device into recovery mode...")
-    os.system(f"./device/{os_name}/ideviceenterrecovery")
 
 def exitRecMode():
-    print("Kicking device out of recovery mode...")
-    os.system(f"./device/{os_name}/irecovery -n")
-    messagebox.showinfo("Sent command!","Kicked device out of recovery mode!\n\n")
-
+    if system_name == "posix":
+        os.system("./device/Linux/exitrecovery.sh")
+    elif system_name == "darwin":
+        os.system("./device/Darwin/exitrecovery.sh")
+    print("Kicking device out recovery mode...")
     
 
 
