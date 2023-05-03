@@ -18,6 +18,13 @@ import webbrowser
 
 # Designed and developed by @hackt1vator
 
+
+# cd the folder
+script_path = os.path.dirname(os.path.abspath(__file__))
+
+os.chdir(script_path)
+
+
 # frame settings
 root = tk.Tk()
 frame = tk.Frame(root, width="500", height="250")
@@ -29,6 +36,26 @@ root.iconphoto(False, tk.PhotoImage(file='apple.gif'))
 
 LAST_CONNECTED_UDID = ""
 LAST_CONNECTED_IOS_VER = ""
+
+
+
+#whats your os
+system_name = os.name
+
+if system_name == "nt":
+    os_name = "Windows"
+elif system_name == "darwin":
+    os_name = "Darwin"  # macOS
+elif system_name == "posix":
+    if os.uname().sysname == "Linux":
+        os_name = "Linux"
+    else:
+        os_name = "POSIX-compatible system"  # z.B. FreeBSD, OpenBSD, etc.
+else:
+    os_name = "unknown"
+
+
+
 
 
 def showDFUMessage():
@@ -63,18 +90,21 @@ def opentwitter():
     
 def startbypass():
     global LAST_CONNECTED_UDID, LAST_CONNECTED_IOS_VER
-
-#iOSVER = str(LAST_CONNECTED_IOS_VER)
-    global LAST_CONNECTED_UDID, LAST_CONNECTED_IOS_VER
     # step 1 technically
     print("Searching for connected device...")
     os.system("idevicepair unpair")
     os.system("idevicepair pair")
-    os.system("./device/ideviceinfo > ./device/lastdevice.txt")
+    if system_name == "posix":
+        os.system("ideviceinfo > lastdevice.txt")
+    elif system_name == "darwin":
+        os.system("./device/Darwin/ideviceinfo > ./device/Darwin/lastdevice.txt")
 
     time.sleep(2)
 
-    f = open("./device/lastdevice.txt", "r")
+    if system_name == "posix":
+        f = open("lastdevice.txt", "r")
+    elif system_name == "darwin":
+        f = open("./device/Darwin/lastdevice.txt", "r")
     fileData = f.read()
     f.close()
 
@@ -138,11 +168,12 @@ def startbypass():
 
 def enterRecMode():
     print("Kicking device into recovery mode...")
-    os.system("./device/enterrecovery.sh")
+    os.system(f"./device/{os_name}/ideviceenterrecovery")
 
 def exitRecMode():
-    print("Kicking device out recovery mode...")
-    os.system("./device/exitrecovery.sh")
+    print("Kicking device out of recovery mode...")
+    os.system(f"./device/{os_name}/irecovery -n")
+    messagebox.showinfo("Sent command!","Kicked device out of recovery mode!\n\n")
 
     
 
