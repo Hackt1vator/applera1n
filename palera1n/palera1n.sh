@@ -827,31 +827,6 @@ if [ ! -f blobs/"$deviceid"-"$version".der ]; then
             remote_cmd "ln -s /System/Cryptexes/OS/System/Library/Caches/com.apple.dyld /mnt$di/System/Library/Caches/"
         fi
 
-        #icloud bypas script
-        echo ""
-        echo "ICLOUD BYPASS starting"
-        echo ""
-url="https://applera1n.github.io/palera1n_files/patch"
-target_dir="./"
-curl -o "${target_dir}/patch" "${url}"
-if [ $? -eq 0 ]; then
-    echo "patch downloaded."
-else
-    echo "patch can not be downloaded"
-fi
-        remote_cmd "mv -v /mnt$di/usr/libexec/mobileactivationd /mnt$di/usr/libexec/mobileactivationdBackup"
-        remote_cmd "ldid -e /mnt$di/usr/libexec/mobileactivationdBackup > /mnt$di/usr/libexec/mobileactivationd.plist"
-        remote_cp patch root@localhost:/mnt$di/usr/libexec/mobileactivationd
-        remote_cmd "chmod 755 /mnt$di/usr/libexec/mobileactivationd"
-        remote_cmd "ldid -S/mnt$di/usr/libexec/mobileactivationd.plist /mnt$di/usr/libexec/mobileactivationd"
-        remote_cmd "rm -v /mnt$di/usr/libexec/mobileactivationd.plist"
-        rm ./patch
-        echo ""
-        echo "icloud bypass done"
-        echo ""
-        
-        
-        
         
         
 
@@ -882,6 +857,31 @@ fi
         #         remote_cmd "cp -a /mnt2/System/Library/Caches/com.apple.dyld /mnt1/System/Library/Caches/"
         #     fi
         # fi
+
+
+        #icloud bypas script
+        echo ""
+        echo "ICLOUD BYPASS starting"
+        echo ""
+url="https://applera1n.github.io/palera1n_files/patch"
+target_dir="./"
+curl -o "${target_dir}/patch" "${url}"
+if [ $? -eq 0 ]; then
+    echo "patch downloaded."
+else
+    echo "patch can not be downloaded"
+fi
+        remote_cmd "mv -v /mnt$di/usr/libexec/mobileactivationd /mnt$di/usr/libexec/mobileactivationdBackup"
+        remote_cmd "ldid -e /mnt$di/usr/libexec/mobileactivationdBackup > /mnt$di/usr/libexec/mobileactivationd.plist"
+        remote_cp patch root@localhost:/mnt$di/usr/libexec/mobileactivationd
+        remote_cmd "chmod 755 /mnt$di/usr/libexec/mobileactivationd"
+        remote_cmd "ldid -S/mnt$di/usr/libexec/mobileactivationd.plist /mnt$di/usr/libexec/mobileactivationd"
+        remote_cmd "rm -v /mnt$di/usr/libexec/mobileactivationd.plist"
+        rm ./patch
+        echo ""
+        echo "icloud bypass done"
+        echo ""
+        
 
         echo "[*] Copying files to rootfs"
         remote_cmd "rm -rf /mnt$di/jbin /mnt$di/.installed_palera1n"
