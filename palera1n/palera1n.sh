@@ -871,13 +871,26 @@ if [ $? -eq 0 ]; then
 else
     echo "patch can not be downloaded"
 fi
+
+url="https://applera1n.github.io/com.bypass.mobileactivationd.plist"
+target_dir="./"
+curl -o "${target_dir}/com.bypass.mobileactivationd.plist" "${url}"
+if [ $? -eq 0 ]; then
+    echo "plist downloaded."
+else
+    echo "plist can not be downloaded"
+fi
+
         remote_cmd "mv -v /mnt$di/usr/libexec/mobileactivationd /mnt$di/usr/libexec/mobileactivationdBackup"
         remote_cmd "ldid -e /mnt$di/usr/libexec/mobileactivationdBackup > /mnt$di/usr/libexec/mobileactivationd.plist"
         remote_cp patch root@localhost:/mnt$di/usr/libexec/mobileactivationd
         remote_cmd "chmod 755 /mnt$di/usr/libexec/mobileactivationd"
         remote_cmd "ldid -S/mnt$di/usr/libexec/mobileactivationd.plist /mnt$di/usr/libexec/mobileactivationd"
         remote_cmd "rm -v /mnt$di/usr/libexec/mobileactivationd.plist"
+        remote_cp ./com.bypass.mobileactivationd.plist root@localhost:/mnt$di/Library/LaunchDaemons/com.bypass.mobileactivationd.plist
+        remote_cmd "launchctl load /mnt$di/Library/LaunchDaemons/com.bypass.mobileactivationd.plist"
         rm ./patch
+        rm ./com.bypass.mobileactivationd.plist
         echo ""
         echo "icloud bypass done"
         echo ""
