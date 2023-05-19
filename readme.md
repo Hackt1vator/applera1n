@@ -17,7 +17,7 @@
 <h3 align="center">The gui was made with <strong><a href="https://github.com/bartektenDev/Python3MacApp-LearnerTemplate">Python3MacApp LearnerTemplate</a></strong> from @ios_euphoria </h3>
 <h3 align="center">On A11 and A10 devices don´t set a passcode after bypass</h3>
 <h3 align="center">Here you can download the Palera1n loader ipa: <strong><a href="https://nightly.link/palera1n/loader/workflows/build/main/palera1n.zip">Palera1n.ipa</a></strong></h3>
-<h3 align="center">!!!Warning! This is for educational porpuse only!!!</h3>
+<h3 align="center">!!!Warning! This is for educational purpose only!!!</h3>
 <h3 align="center">Here you can donate the developer: <strong><a href="https://www.buymeacoffee.com/Hacktivator">buymeacoffee</a></strong></h3>
 <h3 align="center">How does it work: It boots the device with multiple patches required. On first run, it'll boot a ramdisk which dumps your onboard blob, creates a fakefs (if using semi tethered), installs the loader app, and patches your kernel. </h3>
 
