@@ -67,6 +67,9 @@ python3 applera1n.py
 
 
 # Credits
+- [Daniel]
+(https://github.com/DsSoft-Byte)
+  -[pull request]
 
 Python3MacApp LearnerTemplate creator: 
 <strong><a href="https://github.com/bartektenDev">ios_euphoria</a></strong>
