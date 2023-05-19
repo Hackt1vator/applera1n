@@ -67,8 +67,7 @@ python3 applera1n.py
 
 
 # Credits
-- [Daniel]
-(https://github.com/DsSoft-Byte)
+- [Daniel](https://github.com/DsSoft-Byte)
   -[pull request]
 
 Python3MacApp LearnerTemplate creator: 
