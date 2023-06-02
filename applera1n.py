@@ -315,7 +315,7 @@ mainText.place(x=140, y=70)
 
 #label
 my_label2 = Label(frame,
-                 text = "Designed to run on devices on ios 15-16.3")
+                 text = "Designed to run on devices on ios 15-16.6")
 my_label2.place(x=130, y=130)
 
 #label
