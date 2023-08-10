@@ -1,5 +1,6 @@
 # import system functions
 import os
+import signal
 import time
 import re
 import tkinter as tk
@@ -9,6 +10,7 @@ from tkinter.simpledialog import askstring
 from tkinter.messagebox import showinfo
 from subprocess import run
 import subprocess
+from xml.etree.ElementPath import _Callback
 # load images in Tkinter python
 from PIL import ImageTk, Image
 # web
@@ -354,7 +356,7 @@ cButton5.place(x=50, y=160)
 link = Label(root, text="Made this tool @hackt1vator",font=('Helveticabold', 12), cursor="hand2")
 link.place(x=165, y=220)
 link.bind("<Button-1>", lambda e:
-callback("https://twitter.com/hackt1vator"))
+_Callback("https://twitter.com/hackt1vator"))
 
 cbeginExploit2 = tk.Button(frame,
                    text="Twitter!",
