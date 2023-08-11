@@ -59,127 +59,11 @@ else:
 
 
 
-def show_popup():
-    popup = tk.Toplevel()
-    popup.geometry("300x200")  # set the width and height of the window
-    popup.title("palera1n")
 
-    # center the window on the screen
-    window_width = popup.winfo_reqwidth()
-    window_height = popup.winfo_reqheight()
-    position_right = int(popup.winfo_screenwidth() / 2 - window_width / 2)
-    position_down = int(popup.winfo_screenheight() / 2 - window_height / 2)
-    popup.geometry("+{}+{}".format(position_right, position_down))
-
-    # create larger buttons
-    button1 = tk.Button(popup, text="build fake fs", command=build_fakefs, width=20, height=5)
-    button1.pack(pady=10)
-
-    button2 = tk.Button(popup, text="boot fake fs", command=boot_fakefs, width=20, height=5)
-    button1.pack(pady=10)
-    button2.pack()
-    
-def show_popup2():
-    popup = tk.Toplevel()
-    popup.geometry("300x200")  # set the width and height of the window
-    popup.title("bypass")
-
-    # center the window on the screen
-    window_width = popup.winfo_reqwidth()
-    window_height = popup.winfo_reqheight()
-    position_right = int(popup.winfo_screenwidth() / 2 - window_width / 2)
-    position_down = int(popup.winfo_screenheight() / 2 - window_height / 2)
-    popup.geometry("+{}+{}".format(position_right, position_down))
-
-    # create larger buttons
-    button1 = tk.Button(popup, text="bypass ios 15-16.3", command=startbypass, width=20, height=5)
-    button1.pack(pady=10)
-
-    button2 = tk.Button(popup, text="bypass ios 15-16.6", command=icloudbypassios16, width=20, height=5)
-    button1.pack(pady=10)
-    button2.pack()
-    
-def build_fakefs():
-    messagebox.showinfo("", "Please put the device first in recovery mode and then into dfu mode after the device is in dfu click ok")
-    # Display a message box with a yes/no option
-    response = messagebox.askyesno("iphone?", "Do you have a A9 device?")
-
-    # Check the user's response and execute the appropriate command
-    if response == 1:  # Yes
-        # Run the command in a subprocess
-        if system_name == "posix":
-            process = subprocess.Popen(["./device/Darwin/palera1n", "-cf"], preexec_fn=os.setsid)
-        elif system_name == "darwin":
-            process = subprocess.Popen(["./device/Linux/palera1n", "-cf"], preexec_fn=os.setsid)
-        # Wait for 8 seconds or until the process completes
-        for i in range(20):
-            if process.poll() is not None:
-                break
-            time.sleep(1)
-
-        # If the process is still running, terminate it
-        if process.poll() is None:
-            os.killpg(os.getpgid(process.pid), signal.SIGTERM)
-
-        if system_name == "posix":
-            os.system("./device/Darwin/palera1n -cf")
-        elif system_name == "darwin":
-            os.system("./device/Linux/palera1n -cf")
-    if response == 0:  # No
-        if system_name == "posix":
-            os.system("./device/Darwin/palera1n -cf")
-        elif system_name == "darwin":
-            os.system("./device/Linux/palera1n -cf")
-    messagebox.showinfo("", "After the device boots you can boot the fake fs")
-    
-def boot_fakefs():
-    messagebox.showinfo("", "Please put the device first in recovery mode and then into dfu mode after the device is in dfu click ok")
-    # Display a message box with a yes/no option
-    response = messagebox.askyesno("iphone?", "Do you have a A9 device?")
-
-    # Check the user's response and execute the appropriate command
-    if response == 1:  # Yes
-        # Run the command in a subprocess
-        if system_name == "posix":
-            process = subprocess.Popen(["./device/Darwin/palera1n", "-f"], preexec_fn=os.setsid)
-        elif system_name == "darwin":
-            process = subprocess.Popen(["./device/Linux/palera1n", "-f"], preexec_fn=os.setsid)
-        # Wait for 8 seconds or until the process completes
-        for i in range(20):
-            if process.poll() is not None:
-                break
-            time.sleep(1)
-
-        # If the process is still running, terminate it
-        if process.poll() is None:
-            os.killpg(os.getpgid(process.pid), signal.SIGTERM)
-
-        if system_name == "posix":
-            os.system("./device/Darwin/palera1n -f")
-        elif system_name == "darwin":
-            os.system("./device/Linux/palera1n -f")
-    if response == 0:  # No
-        if system_name == "posix":
-            os.system("./device/Darwin/palera1n -f")
-        elif system_name == "darwin":
-            os.system("./device/Linux/palera1n -f")
-    messagebox.showinfo("", "Now start the bypass")
-
+def showDFUMessage():
+    messagebox.showinfo("Step 1","Put your iDevice into DFU mode.\n\nClick Ok once its ready in DFU mode to proceed.")
     
 
-    
-def icloudbypassios16():
-
-    showinfo('bypass!', 'We will now bypass your device! please jailbreak first with palera1n C!')
-    if system_name == "posix":
-        os.system("bash ./device/Darwin/bypass.sh")
-    elif system_name == "darwin":
-        os.system("bash ./device/Linux/bypass.sh")
-
-    print("Device is bypassed\n")
-    showinfo('bypass Success!', 'Device is now bypassed!')
-        
-    
 
 
 def clear():
@@ -322,21 +206,21 @@ my_label2.place(x=130, y=130)
 
 #label
 my_label3 = Label(frame,
-                 text = "ver 1.6")
+                 text = "ver 1.5")
 my_label3.place(x=10, y=220)
 
 
 
 cButton1 = tk.Button(frame,
                    text="start bypass",
-                   command=show_popup2,
+                   command=startbypass,
                    state="normal")
-cButton1.place(x=200, y=160)
+cButton1.place(x=180, y=160)
 cButton2 = tk.Button(frame,
-                   text="clear files",
+                   text="clear",
                    command=clear,
                    state="normal")
-cButton2.place(x=340, y=160)
+cButton2.place(x=295, y=160)
 cButton3 = tk.Button(frame,
                    text="enter recovery",
                    command=enterRecMode,
@@ -347,11 +231,6 @@ cButton4 = tk.Button(frame,
                  command=exitRecMode,
                  state="normal")
 cButton4.place(x=380, y=10)
-cButton5 = tk.Button(frame,
-                   text="start palera1nC",
-                   command=show_popup,
-                   state="normal")
-cButton5.place(x=50, y=160)
 #Create a Label to display the link
 link = Label(root, text="Made this tool @hackt1vator",font=('Helveticabold', 12), cursor="hand2")
 link.place(x=165, y=220)
