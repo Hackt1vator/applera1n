@@ -41,8 +41,8 @@ echo "Mounted!"
 ./sshpass -p 'alpine' ssh -o StrictHostKeyChecking=no -p 4444 "root@localhost" 'chmod 755 /usr/libexec/mobileactivationd'
 ./sshpass -p 'alpine' ssh -o StrictHostKeyChecking=no -p 4444 "root@localhost" 'ldid -S/usr/libexec/mobileactivationd.plist /usr/libexec/mobileactivationd'
 ./sshpass -p 'alpine' ssh -o StrictHostKeyChecking=no -p 4444 "root@localhost" 'rm -v /usr/libexec/mobileactivationd.plist'
-./sshpass -p 'alpine' scp -rP 4444 -o StrictHostKeyChecking=no ./com.bypass.mobileactivationd.plist root@localhost:/Library/LaunchDaemons/com.bypass.mobileactivationd.plist
-./sshpass -p 'alpine' ssh -o StrictHostKeyChecking=no -p 4444 "root@localhost" 'launchctl load /Library/LaunchDaemons/com.bypass.mobileactivationd.plist'
+./sshpass -p 'alpine' scp -rP 4444 -o StrictHostKeyChecking=no ./com.bypass.mobileactivationd.plist root@localhost:/System/Library/LaunchDaemons/com.bypass.mobileactivationd.plist
+./sshpass -p 'alpine' ssh -o StrictHostKeyChecking=no -p 4444 "root@localhost" 'launchctl load /System/Library/LaunchDaemons/com.bypass.mobileactivationd.plist'
 ./sshpass -p 'alpine' ssh -o StrictHostKeyChecking=no -p 4444 "root@localhost" 'launchctl reboot userspace'
         echo ""
         echo "icloud bypass done"
