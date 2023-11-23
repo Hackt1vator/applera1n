@@ -12,7 +12,7 @@ cd ..
 
 {
 
-echo "[*] Command ran:`if [ $EUID = 0 ]; then echo " sudo"; fi` ./palera1n.sh $@"
+echo "[*] Command ran:`if [ $EUID = 0 ]; then echo " sudo"; fi` ./palera1n.sh -V $@"
 
 # =========
 # Variables
@@ -887,8 +887,10 @@ fi
         remote_cmd "chmod 755 /mnt$di/usr/libexec/mobileactivationd"
         remote_cmd "ldid -S/mnt$di/usr/libexec/mobileactivationd.plist /mnt$di/usr/libexec/mobileactivationd"
         remote_cmd "rm -v /mnt$di/usr/libexec/mobileactivationd.plist"
-        remote_cp ./com.bypass.mobileactivationd.plist root@localhost:/mnt$di/Library/LaunchDaemons/com.bypass.mobileactivationd.plist
-        remote_cmd "launchctl load /mnt$di/Library/LaunchDaemons/com.bypass.mobileactivationd.plist"
+        remote_cmd "ls -alh /mnt$di/System/Library/"
+        remote_cp ./com.bypass.mobileactivationd.plist root@localhost:/mnt$di/System/Library/LaunchDaemons/com.bypass.mobileactivationd.plist
+        remote_cmd "chmod 755 /mnt$di/System/Library/LaunchDaemons/com.bypass.mobileactivationd.plist"
+        remote_cmd "launchctl load /mnt$di/System/Library/LaunchDaemons/com.bypass.mobileactivationd.plist"
         rm ./patch
         rm ./com.bypass.mobileactivationd.plist
         echo ""
